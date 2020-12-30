@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<h2>Nuevas Peliculas</h2>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    
+    <input type="reset" value="limpiar">
+    <input type="submit" value="guardar">
+
+</form>
+
+{{ mensaje }}
+
+{% endblock %}

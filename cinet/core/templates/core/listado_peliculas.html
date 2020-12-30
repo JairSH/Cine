@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<h2> Listado de peliculas </h2>
+
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Opciones</th>
+    </tr>
+
+    {%for p in Peliculas %}
+    <tr>
+        <td>{{ p.nombre }}</td>
+        <td>
+            <a href="{% url 'detalle_peliculas' %}">Detalles</a>
+        </td>
+    </tr>
+
+    {% endfor%}
+
+</table>
+{% endblock %}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CineLand</title>
+    {% load static %}
+    {% block css%}
+
+    {% endblock%}
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+</head>
+<body>
+    <header>
+      
+        <img src="{% static 'core/img/logo.png' %}" alt="Logo" class="logo">
+
+        
+        
+    </header>
+
+    <div id="principal">
+       <br>
+       {% block contenido %}
+
+       {% endblock %}
+    </div>
+
+    <footer class="hide_on_mobile">
+        <div>
+            <img src="{% static 'core/img/logo.png' %}" alt="logo" class="logo_footer">
+        </div>
+        <div>
+            <h4>Programación</h4>
+            <hr>
+            <ul>
+                <li>Cartelera</li>
+                <li>proximamente</li>
+                <li>Venta anticipada</li>
+            </ul>
+        </div>
+        <div>
+                <h4>Programación</h4>
+                <hr>
+                <ul>
+                    <li>Cartelera</li>
+                    <li>proximamente</li>
+                    <li>Venta anticipada</li>
+                </ul>
+        </div>
+        <div>
+                <h4>Programación</h4>
+                <hr>
+                <ul>
+                    <li>Cartelera</li>
+                    <li>proximamente</li>
+                    <li>Venta anticipada</li>
+                </ul>
+        </div>
+    </footer>
+
+    <!--footer mobile-->
+    <footer class="hide_on_desktop">
+        <img src="{% static 'core/img/logo.png' %}" alt="Logo" class="logo_footer_mobile">
+    </footer>
+    
+    {% block javascript %}
+    
+    {% endblock %}
+    <script src="{% static 'core/js/basico.js' %}"></script>
+</body>
+</html>
