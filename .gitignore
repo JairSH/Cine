@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 # carpetas
 Lib/
 Scripts/
 venv/
-=======
-*.jpg
-*.png
->>>>>>> 9fb05a14b9cd7e478aa02f3ab56bf50307d9d11e
+*.pyc
